@@ -1,5 +1,3 @@
-export default function findBy(key, property) {
-  return function (obj) {
-    return obj[key] === property;
-  };
-}
+const findBy = (key, property) => (obj) => obj[key] === property;
+
+export default findBy;
